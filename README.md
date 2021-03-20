@@ -76,7 +76,7 @@ Nella Sezione 1 verranno identificati i tipi di scheda NIC presenti sul PC in us
 
 **Nota:** per usufruire del comando ifconfig é necessario installare il pacchetto net-tools tramite il seguente comando:
 
-```
+```bash
 $ sudo pacman -S net-tools
 ```
 
@@ -84,7 +84,7 @@ $ sudo pacman -S net-tools
 * Aprire il terminale premendo **CTRL+Alt+T** oppure cercando **Konsole** nel menú **Start.**
 * Digitare all'interno del terminale il seguente comando:
 
-```
+```bash
 $ ifconfig -a
 ```
 
@@ -93,7 +93,7 @@ $ ifconfig -a
 * Notiamo che sono presenti 2 schede di rete, in questo caso, **enp0s31f6** indica la **NIC cablata** e **wlp0s20f0u1** la **NIC wireless**. L'interfaccia **lo** invece viene usata per gli indirizzi di **loopback** per riferirsi a servizi aperti sul computer stesso. L'interfaccia **enp0s31f6** ha come indirizzo ip **192.168.1.2**, come subnet mask **255.255.255.0** e il suo **indirizzo MAC é** **70:8b:cd:a6:f7:20**. L'interfaccia **wlp0s20f0u1** non é collegata ancora a nessuna rete ma é possibile comunque vedere il suo indirizzo MAC.
 * Per visualizzare gli ip dei server **DNS** in uso basta eseguire questo comando:
 
-```
+```bash
 $ grep "^nameserver" /etc/resolv.conf
 ```
 
@@ -101,7 +101,7 @@ $ grep "^nameserver" /etc/resolv.conf
 
 * Invece per visualizzare l**'indirizzo ip del gateway** di default usare questo comando (Quello evidenziato in bianco é il gateway di default della scheda di rete ethernet):
 
-```
+```bash
 $ route -n
 ```
 
@@ -119,7 +119,9 @@ Nella Sezione 2 si utilizzeranno le icone di rete nella barra delle applicazioni
 
 * Adesso se ci scolleghiamo da una connessione wireless cliccando **disconnetti** accanto alla rete selezionata notiamo che l'icona nella barra delle applicazioni **verrá** **sostituita dall'icona Rete cablata**.
 
-![disattivazione wireless.png](disattivazione%20wireless.png?fileId=537452#mimetype=image%2Fpng&hasPreview=true)![Rete Cablata.png](Rete%20Cablata.png?fileId=537454#mimetype=image%2Fpng&hasPreview=true)
+![disattivazione wireless.png](disattivazione%20wireless.png?fileId=537452#mimetype=image%2Fpng&hasPreview=true)
+
+![Rete Cablata.png](Rete%20Cablata.png?fileId=537454#mimetype=image%2Fpng&hasPreview=true)
 
 * Se ci **ricolleghiamo** alla rete wireless l'icona dovrebbe di nuovo cambiare in Rete wireless.
 
