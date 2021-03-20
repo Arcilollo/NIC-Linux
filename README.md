@@ -77,7 +77,7 @@ Nella Sezione 1 verranno identificati i tipi di scheda NIC presenti sul PC in us
 **Nota:** per usufruire del comando ifconfig é necessario installare il pacchetto net-tools tramite il seguente comando:
 
 ```bash
-$ sudo pacman -S net-tools
+sudo pacman -S net-tools
 ```
 
 * Poiché su KDE Plasma 5.21 non é presente un'interfaccia grafica per **visualizzare** le informazioni relative alla scheda di rete, é necessario usare usare il terminale.
@@ -85,7 +85,7 @@ $ sudo pacman -S net-tools
 * Digitare all'interno del terminale il seguente comando:
 
 ```bash
-$ ifconfig -a
+ifconfig -a
 ```
 
 ![comando ifconfig.png](comando%20ifconfig.png?fileId=536871#mimetype=image%2Fpng&hasPreview=true)
@@ -94,7 +94,7 @@ $ ifconfig -a
 * Per visualizzare gli ip dei server **DNS** in uso basta eseguire questo comando:
 
 ```bash
-$ grep "^nameserver" /etc/resolv.conf
+grep "^nameserver" /etc/resolv.conf
 ```
 
 ![DNS.png](DNS.png?fileId=536948#mimetype=image%2Fpng&hasPreview=true)
@@ -102,7 +102,7 @@ $ grep "^nameserver" /etc/resolv.conf
 * Invece per visualizzare l**'indirizzo ip del gateway** di default usare questo comando (Quello evidenziato in bianco é il gateway di default della scheda di rete ethernet):
 
 ```bash
-$ route -n
+route -n
 ```
 
 ![Default Gateway.png](Default%20Gateway.png?fileId=537428#mimetype=image%2Fpng&hasPreview=true)
